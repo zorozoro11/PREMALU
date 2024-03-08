@@ -120,7 +120,7 @@ animation: heart1beat 3.4s infinite;
 }
 .card::before{
   content: attr(data-content);
-  position: absolute;
+  position: relative;
   top: 20px;
   left:20px;
 
