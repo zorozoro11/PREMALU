@@ -111,7 +111,7 @@ animation: heart1beat 3.4s infinite;
 .card{
   position: relative;
   width: 250px;
-  height: 220px;
+  height: 200px;
   background: #fff;
   border-radius: 2px;
   display: grid;
@@ -121,7 +121,7 @@ animation: heart1beat 3.4s infinite;
 .card::before{
   content: attr(data-content);
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 10px;
 
   padding-top: 10px;
