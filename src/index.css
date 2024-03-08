@@ -133,13 +133,13 @@ animation: heart1beat 3.4s infinite;
   font-size: 23px;
 }
 .valentines:hover .card{
-  transform: translateY(-100px);
+  transform: translateY(-150px);
 }
 .card .text{
   font-family: 'Brush Script MT', cursive;
-  font-size: 28px;
+  font-size: 20px;
   text-align: center;
-  line-height: 25px;
+  line-height: 20px;
   color: #003049;
 }
 
