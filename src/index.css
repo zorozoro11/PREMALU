@@ -137,7 +137,7 @@ animation: heart1beat 3.4s infinite;
 .card .text{
   font-family: 'Brush Script MT', cursive;
   font-size: 28px;
-  text-align: center;
+  text-align: justify;
   line-height: 25px;
   color: #003049;
 }
