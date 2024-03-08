@@ -155,7 +155,7 @@ animation: heart1beat 3.4s infinite;
   content: '';
   position: relative;
   width: 330px;
-  height: 30px;
+  height: 30px; 
   border-radius: 50%;
   background: rgba(0, 0, 0, .3);
   top: 265px;
