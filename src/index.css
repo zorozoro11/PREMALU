@@ -113,7 +113,7 @@ animation: heart1beat 3.4s infinite;
   width: 250px;
   height: 200px;
   background: #fff;
-  border-radius: 2px;
+  border-radius: 4px;
   display: grid;
   place-items: center;
   transition: 1s;
@@ -129,7 +129,7 @@ animation: heart1beat 3.4s infinite;
   bottom: 10px;
   
   /* font-family: 'Brush Script MT'; */
-  font-size: 23px;
+  font-size: 25px;
 }
 .valentines:hover .card{
   transform: translateY(-150px);
