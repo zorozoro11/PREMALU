@@ -76,7 +76,7 @@ function Landing() {
                                 <div className="envelope">
                                 <div className="card customFont" style={{ fontSize: '14px' }} data-content={`Lets go to ${data.location} at ${data.time} ❤️`}>
                                         <div className="text">
-                                            Let's Go...
+                                            
                                         </div>
                                         <div className="heart"></div>
                                     </div>
