@@ -123,7 +123,7 @@ animation: heart1beat 3.4s infinite;
   position: relative;
   top: 20px;
   left:20px;
-
+  padding-left: 10px;
   padding-top: 10px;
   right: 10px;
   bottom: 10px;
@@ -137,7 +137,7 @@ animation: heart1beat 3.4s infinite;
 .card .text{
   font-family: 'Brush Script MT', cursive;
   font-size: 28px;
-  text-align: justify;
+  text-align: center;
   line-height: 25px;
   color: #003049;
 }
@@ -154,11 +154,11 @@ animation: heart1beat 3.4s infinite;
   content: '';
   position: relative;
   width: 330px;
-  height: 30px; 
+  height: 25px; 
   border-radius: 50%;
   background: rgba(0, 0, 0, .3);
   top: 265px;
-  left: 15px;
+  left: -15px;
   animation: scale 3s linear infinite;
 }
 @keyframes scale{
