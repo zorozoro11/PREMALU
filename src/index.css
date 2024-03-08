@@ -240,7 +240,7 @@ button:hover {
   background: #ffc8ff;
 }
 
-input:-webkit-autofill,
+input:-webkit-autofill, 
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
   border-bottom: 5px solid #95a4ff;
