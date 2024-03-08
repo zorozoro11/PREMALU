@@ -121,7 +121,7 @@ animation: heart1beat 3.4s infinite;
 .card::before{
   content: attr(data-content);
   position: absolute;
-  top: 80px;
+  top: 50px;
   left: 10px;
 
   padding-top: 10px;
@@ -137,9 +137,9 @@ animation: heart1beat 3.4s infinite;
 }
 .card .text{
   font-family: 'Brush Script MT', cursive;
-  font-size: 20px;
+  font-size: 28px;
   text-align: top;
-  line-height: 20px;
+  line-height: 25px;
   color: #003049;
 }
 
@@ -155,7 +155,7 @@ animation: heart1beat 3.4s infinite;
   content: '';
   position: relative;
   width: 330px;
-  height: 25px;
+  height: 30px;
   border-radius: 50%;
   background: rgba(0, 0, 0, .3);
   top: 265px;
