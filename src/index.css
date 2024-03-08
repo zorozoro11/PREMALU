@@ -138,7 +138,7 @@ animation: heart1beat 3.4s infinite;
 .card .text{
   font-family: 'Brush Script MT', cursive;
   font-size: 20px;
-  text-align: center;
+  text-align: top;
   line-height: 20px;
   color: #003049;
 }
@@ -153,7 +153,7 @@ animation: heart1beat 3.4s infinite;
 }
 .valentines::before{
   content: '';
-  position: absolute;
+  position: relative;
   width: 330px;
   height: 25px;
   border-radius: 50%;
