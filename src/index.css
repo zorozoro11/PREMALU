@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* heart1 */
+.heart1{
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+.heart1:before,
+.heart1:after{ 
+  content: "";
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: transparent;
+  border: 10px solid #d01919;
+  border-radius: 50px 50px 0;
+  transform-origin: 0 100%;
+  transform: rotate(-45deg);
+}
+.heart1:after{
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+}
+
+/* Keyframe animation */
+@keyframes heart1beat {
+0% {
+  transform: scale(1);
+}
+15% {
+  transform: scale(1.4);
+}
+30% {
+  transform: scale(1);
+}
+45% {
+  transform: scale(1.4);
+}
+70% {
+  transform: scale(1);
+}
+}
+.heading{
+  font-family: 'Gamja Flower', sans-serif;
+}
+
+/* Apply the animation to the heart1 shape */
+.heart1 {
+animation: heart1beat 3.4s infinite;
+}
+
+
+.container{
+  position: relative;
+  max-width: fit-content;
+  
+}
+.valentines{
+  position: relative;
+  top: 50px;
+  cursor: pointer;
+  animation: up 3s linear infinite;
+}
+.envelope{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: #f08080;
+  display: grid;
+  place-items: center;
+}
+.envelope::before{
+  content: '';
+  position: absolute;
+  width: 212px;
+  height: 212px;
+  background: #f08080;
+  transform: rotate(45deg);
+  top: -105px;
+  left: 44px;
+  border-radius: 30px 0 0 0;
+}
+.front{
+  position: absolute;
+  border-right: 180px solid #f4978e;
+  border-top: 95px solid transparent;
+  border-bottom: 100px solid transparent;
+  left: 120px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  z-index: 10;
+}
+.front::before{
+  position: absolute;
+  content: '';
+  border-left: 300px solid #fda996;
+  border-top: 195px solid transparent;
+  left: -120px;
+  top: -95px;
+}
+.card{
+  position: relative;
+  width: 250px;
+  height: 180px;
+  background: #fff;
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+  transition: 1s;
+}
+.card::before{
+  content: attr(data-content);
+  position: absolute;
+  top: 80px;
+  left: 10px;
+
+  padding-top: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 2px solid #003049;
+  border-style: dashed;
+  /* font-family: 'Brush Script MT'; */
+  font-size: 23px;
+}
+.valentines:hover .card{
+  transform: translateY(-100px);
+}
+.card .text{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+  text-align: center;
+  line-height: 25px;
+  color: #003049;
+}
+
+@keyframes up{
+  0%, 100%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(-30px);
+  }
+}
+.valentines::before{
+  content: '';
+  position: absolute;
+  width: 330px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .3);
+  top: 265px;
+  left: -15px;
+  animation: scale 3s linear infinite;
+}
+@keyframes scale{
+  0%, 100%{
+      transform: scaleX(1);
+  }
+  50%{
+      transform: scaleX(.85);
+  }
+}
+ /* form */
+ html{
+  height: 100vh;
+  width: 100vw;
+ }
+ body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
+  background-size: cover;
+  background-color: #fff7af;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.contact-us {
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+  /* margin: 50px; */
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: 'Fjalla One';
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid rgba(0, 0, 0, 1);
+  background: #f8f4e5;
+  width: auto;
+  padding-left: 5px;
+  outline: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+input:focus {
+  border-bottom: 5px solid #ffa580;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px rgba(0, 0, 0, 1);
+}
+
+button:hover {
+  /* background: rgba(0, 0, 0, 1); */
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+::selection {
+  background: #ffc8ff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 5px solid #95a4ff;
+  -webkit-text-fill-color: #2a293e;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.customFont{
+  font-family: 'Brush Script MT';
+}
