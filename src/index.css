@@ -83,7 +83,7 @@ animation: heart1beat 3.4s infinite;
   position: absolute;
   width: 212px;
   height: 412px;
-  background: #f08080;
+  background: #f08080; 
   transform: rotate(45deg);
   top: -105px;
   left: 44px;
