@@ -44,7 +44,7 @@ function Landing() {
     <React.Fragment>
        {!isOpen ? ( <div className="flex justify-center items-center h-screen ">
             <div className="text-center flex items-center flex-col">
-                <h1 className="text-4xl font-bold text-red-500 drop-shadow-md font-serif italic heading">Wanna go out with me , {data?.name} ? </h1>
+                <h1 className="text-4xl font-bold text-red-500 drop-shadow-md font-serif italic heading">Happy 5th Anniversary to US....❤️  </h1>
                 <div className='pt-16'>
                     <div className="heart1 drop-shadow-md"></div>
                 </div>
