@@ -44,7 +44,7 @@ function Landing() {
     <React.Fragment>
        {!isOpen ? ( <div className="flex justify-center items-center h-screen ">
             <div className="text-center flex items-center flex-col">
-                <h1 className="text-4xl font-bold text-red-500 drop-shadow-md font-serif italic heading">Happy 5th Anniversary to US....❤️  </h1>
+                <h1 className="text-4xl font-bold text-red-500 drop-shadow-md font-serif italic heading"> would you leave me if not say....❤️  </h1>
                 <div className='pt-16'>
                     <div className="heart1 drop-shadow-md"></div>
                 </div>
@@ -74,7 +74,7 @@ function Landing() {
                          <div className="container">
                             <div className="valentines ">
                                 <div className="envelope">
-                                <div className="card customFont" style={{ fontSize: '14px' }} data-content={`Krishaa, lets go ${data.location} ${data.time} `}>
+                                <div className="card customFont" style={{ fontSize: '14px' }} data-content={`Krishaa, i remember it Always..... ${data.location} ${data.time} `}>
                                         <div className="text">
                                             
                                         </div>
